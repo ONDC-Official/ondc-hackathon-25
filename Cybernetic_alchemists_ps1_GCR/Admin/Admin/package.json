@@ -1,0 +1,67 @@
+{
+  "name": "admin-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@ant-design/charts": "1.4.2",
+    "@ant-design/icons": "4.6.0",
+    "@ant-design/plots": "1.2.5",
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@google-cloud/vision": "^3.1.0",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.13.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "antd": "4.24.10",
+    "bcryptjs": "^2.4.3",
+    "i18next": "^23.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.5",
+    "mysql2": "^3.12.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-barcode-reader": "^0.0.2",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^13.0.0",
+    "react-icons": "^5.4.0",
+    "react-minimal-pie-chart": "^9.1.0",
+    "react-quill": "^2.0.0",
+    "react-router-dom": "^6.11.1",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4",
+    "xlsx": "^0.18.5"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@craco/craco": "^7.1.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "craco-less": "^3.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

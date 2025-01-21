@@ -1,0 +1,136 @@
+:root {
+  --background-color: #ffffff;
+  --primary-color: #1890ff;
+  --secondary-color: #f0f0f0;
+  --text-color: #333333;
+  --box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  --border-radius: 8px;
+}
+
+[data-theme='dark'] {
+  --background-color: #1f1f1f;
+  --primary-color: #40a9ff;
+  --secondary-color: #141414;
+  --text-color: #ffffff;
+  --box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+}
+
+/* Header */
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  background: var(--background-color);
+  box-shadow: var(--box-shadow);
+  backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.theme-switch {
+  margin-left: 16px;
+  cursor: pointer;
+  font-size: 20px;
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+
+.menu-toggle {
+  padding: 8px;
+  border-radius: var(--border-radius);
+  transition: all 0.3s ease;
+}
+
+.menu-toggle:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+/* Sidebar */
+.logo {
+  height: 80px;
+  margin: 16px 0px;
+}
+
+.logo img {
+  height: 100%;
+}
+
+.ant-layout-sider-collapsed .logo img {
+  width: 32px;
+}
+
+/* Content */
+.admin-layout .ant-layout-content {
+  margin-left: 200px;
+  padding: 24px;
+  background: var(--background-color);
+  transition: margin-left 0.3s ease;
+}
+
+.ant-layout-sider-collapsed + .ant-layout .ant-layout-content {
+  margin-left: 80px;
+}
+
+.content-wrapper {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: var(--border-radius);
+  margin: 20px;
+  box-shadow: var(--box-shadow);
+}
+
+.page-breadcrumb {
+  margin-bottom: 20px;
+}
+
+/* Hover Effects */
+.menu-toggle:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.nav-menu .ant-menu-item:hover {
+  background-color: var(--secondary-color);
+}
+
+.dashboard .ant-card:hover {
+  transform: scale(1.02);
+  transition: transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .admin-header {
+    padding: 0 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .header-right .ant-input-search {
+    display: none;
+  }
+
+  .dashboard .ant-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .dashboard .ant-col {
+    width: 100%;
+  }
+
+  .content-wrapper {
+    padding: 12px;
+    margin: 12px;
+  }
+
+  .footer-links {
+    display: none;
+  }
+}

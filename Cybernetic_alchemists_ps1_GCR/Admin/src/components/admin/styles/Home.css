@@ -1,0 +1,93 @@
+.admin-home {
+  padding: 2rem;
+}
+
+.admin-home h1 {
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.admin-home__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.admin-home__stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.stat-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.stat-card h3 {
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.admin-home__quick-actions {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.admin-home__quick-actions h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.quick-actions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.action-button {
+  padding: 1rem;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.action-button:hover {
+  background: #2980b9;
+}
+
+/* New styles for Recent Activities and Notifications */
+.activities-card, .notifications-card {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.activities-card h2, .notifications-card h2 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.activities-card ul, .notifications-card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.activities-card li, .notifications-card li {
+  margin-bottom: 0.5rem;
+  color: #555;
+}

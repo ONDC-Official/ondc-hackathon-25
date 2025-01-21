@@ -1,0 +1,21 @@
+.order-management {
+  animation: fadeIn 0.3s ease;
+}
+
+.table-card {
+  background: var(--background-primary);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.orders-table {
+  margin-top: 20px;
+}
+
+.summary-section {
+  margin-bottom: 20px;
+}
+
+.summary-section h4 {
+  margin-bottom: 10px;
+}
