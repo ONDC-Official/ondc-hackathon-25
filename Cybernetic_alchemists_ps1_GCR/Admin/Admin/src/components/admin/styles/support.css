@@ -1,0 +1,171 @@
+.support-page {
+  animation: fadeIn 0.3s ease;
+}
+
+.support-alert {
+  margin-bottom: 24px;
+  border-radius: var(--border-radius);
+}
+
+.support-tabs {
+  background: var(--background-primary);
+  padding: 16px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.faq-card,
+.tickets-card,
+.chat-card {
+  background: var(--background-primary);
+  border-radius: var(--border-radius);
+  margin-top: 16px;
+}
+
+.search-input {
+  margin-bottom: 16px;
+}
+
+/* FAQ styles */
+.faq-collapse {
+  background: var(--background-secondary);
+}
+
+.ant-collapse-header {
+  color: var(--text-primary) !important;
+}
+
+.ant-collapse-content {
+  background: var(--background-primary);
+  color: var(--text-primary);
+}
+
+/* Ticket styles */
+.tickets-header {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tickets-list .ant-list-item {
+  background: var(--background-secondary);
+  margin-bottom: 8px;
+  padding: 16px;
+  border-radius: var(--border-radius);
+  transition: all 0.3s ease;
+}
+
+.tickets-list .ant-list-item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--box-shadow);
+}
+
+.ticket-avatar {
+  background: var(--primary-color);
+}
+
+.ticket-meta {
+  color: var(--text-secondary);
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+/* Chat styles */
+.chat-messages {
+  height: 400px;
+  overflow-y: auto;
+  padding: 16px;
+  background: var(--background-secondary);
+  border-radius: var(--border-radius);
+  margin-bottom: 16px;
+}
+
+.message {
+  margin-bottom: 16px;
+  max-width: 70%;
+}
+
+.user-message {
+  margin-left: auto;
+  text-align: right;
+}
+
+.agent-message {
+  margin-right: auto;
+}
+
+.message-content {
+  padding: 12px;
+  border-radius: var(--border-radius);
+  background: var(--primary-color);
+  color: white;
+  display: inline-block;
+}
+
+.user-message .message-content {
+  background: var(--primary-color);
+}
+
+.agent-message .message-content {
+  background: var(--background-primary);
+  color: var(--text-primary);
+}
+
+.message-time {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+
+.chat-input {
+  display: flex;
+  gap: 8px;
+}
+
+.chat-input .ant-input {
+  flex: 1;
+}
+
+.chat-start {
+  text-align: center;
+  padding: 48px 24px;
+}
+
+.chat-icon {
+  font-size: 48px;
+  color: var(--primary-color);
+  margin-bottom: 16px;
+}
+
+/* Loading state */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .support-tabs {
+    padding: 8px;
+  }
+  
+  .message {
+    max-width: 85%;
+  }
+  
+  .ant-tabs-nav {
+    margin-bottom: 8px;
+  }
+  
+  .chat-messages {
+    height: 300px;
+  }
+}
+
+/* Animations */
+.tickets-list .ant-list-item,
+.message {
+  animation: fadeIn 0.3s ease;
+}

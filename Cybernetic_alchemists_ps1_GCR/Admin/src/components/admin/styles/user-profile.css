@@ -1,0 +1,63 @@
+.statistics-row {
+  margin-bottom: 24px;
+}
+
+.statistic-card {
+  text-align: center;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.statistic-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.statistic-icon {
+  margin-bottom: 16px;
+}
+
+.user-profile-card {
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-profile-card .ant-card-body {
+  padding: 24px;
+}
+
+.user-profile-card .ant-avatar {
+  border: 2px solid #1890ff;
+}
+
+.user-profile-card .ant-descriptions-item-label {
+  width: 150px;
+}
+
+.user-profile-card .ant-space {
+  width: 100%;
+}
+
+.edit-profile-modal .ant-modal-body {
+  padding: 24px;
+}
+
+.profile-upload-button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #1890ff;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+}
+
+.profile-upload-button:hover {
+  background: #40a9ff;
+}
