@@ -1,0 +1,5 @@
+package com.backend.hackathon.service;
+
+public class InventoryService {
+
+}

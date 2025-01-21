@@ -1,0 +1,5 @@
+package com.backend.hackathon.repo;
+
+public class ProductRepository {
+
+}

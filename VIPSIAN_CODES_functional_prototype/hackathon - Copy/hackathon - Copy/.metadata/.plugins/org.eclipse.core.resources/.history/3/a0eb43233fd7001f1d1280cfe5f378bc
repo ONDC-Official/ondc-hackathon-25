@@ -1,0 +1,11 @@
+package com.backend.hackathon.entity;
+
+
+public class InventoryUpdateRequest {
+
+	private Long productId;
+	
+	private int quantity;
+	
+	private String reason; //eg - "Order" , "Return" , "Manual Adjustment"
+}
