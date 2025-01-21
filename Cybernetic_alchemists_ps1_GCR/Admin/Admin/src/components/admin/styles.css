@@ -1,0 +1,97 @@
+/* Layout styles */
+.ant-layout-wrapper {
+  min-height: 100vh;
+}
+
+.ant-layout-wrapper .trigger {
+  padding: 0 24px;
+  font-size: 18px;
+  line-height: 64px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.ant-layout-wrapper .trigger:hover {
+  color: #1890ff;
+}
+
+.logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Sidebar styles */
+.ant-layout-sider {
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+}
+
+/* Header styles */
+.ant-layout-header {
+  background: #fff !important;
+  padding: 0 !important;
+  position: fixed;
+  width: calc(100% - 200px);
+  z-index: 99;
+  transition: width 0.2s;
+  box-shadow: 0 1px 4px rgba(0,21,41,.08);
+}
+
+.ant-layout-sider-collapsed + .ant-layout .ant-layout-header {
+  width: calc(100% - 80px);
+}
+
+/* Content styles */
+.ant-layout-content {
+  margin: 84px 24px 24px calc(200px + 24px) !important;
+  padding: 24px;
+  background: #fff;
+  min-height: calc(100vh - 108px) !important;
+  border-radius: 4px;
+  transition: margin 0.2s;
+}
+
+.ant-layout-sider-collapsed + .ant-layout .ant-layout-content {
+  margin-left: calc(80px + 24px) !important;
+}
+
+/* Card styles */
+.ant-card {
+  box-shadow: 0 1px 4px rgba(0,21,41,.08);
+}
+
+/* Statistics styles */
+.ant-statistic-title {
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.ant-statistic-content {
+  color: #1890ff;
+}
+
+/* Typography */
+h2 {
+  margin-bottom: 24px;
+  font-weight: 500;
+}
+
+/* Table styles */
+.ant-table-wrapper {
+  margin-top: 16px;
+}
+
+/* Button styles */
+.ant-btn-primary {
+  background: #1890ff;
+  border-color: #1890ff;
+}
+
+.ant-btn-primary:hover {
+  background: #40a9ff;
+  border-color: #40a9ff;
+}

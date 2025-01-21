@@ -1,0 +1,1 @@
+export { default as InventoryManagement } from './InventoryManagement-enhanced';

@@ -1,0 +1,135 @@
+.product-management {
+  animation: fadeIn 0.3s ease;
+}
+
+.table-card {
+  background: var(--background-primary);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.search-input {
+  min-width: 250px;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  width: 300px;
+}
+
+.products-table {
+  margin-top: 16px;
+}
+
+.products-table .ant-table {
+  background: var(--background-primary);
+}
+
+.products-table .ant-table-thead > tr > th {
+  background: var(--background-secondary);
+  color: var(--text-primary);
+}
+
+.action-buttons .edit-button:hover {
+  color: var(--primary-color);
+  background: var(--hover-color);
+}
+
+.action-buttons .delete-button:hover {
+  color: var(--error-color);
+  background: var(--hover-color);
+}
+
+.product-id {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.add-button {
+  background: var(--primary-color);
+  border: none;
+}
+
+.add-button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+/* Modal styles */
+.ant-modal-content {
+  background: var(--background-primary);
+  border-radius: var(--border-radius);
+}
+
+.ant-modal-header {
+  background: var(--background-primary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.ant-modal-title {
+  color: var(--text-primary);
+}
+
+.ant-modal-close {
+  color: var(--text-secondary);
+}
+
+.ant-modal-close:hover {
+  color: var(--text-primary);
+}
+
+/* Form styles */
+.ant-form-item-label > label {
+  color: var(--text-primary);
+}
+
+.ant-input,
+.ant-input-number,
+.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  background: var(--background-secondary);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+.ant-input:hover,
+.ant-input-number:hover,
+.ant-select:not(.ant-select-customize-input) .ant-select-selector:hover {
+  border-color: var(--primary-color);
+}
+
+.ant-input:focus,
+.ant-input-number:focus,
+.ant-select-focused:not(.ant-select-customize-input) .ant-select-selector {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px var(--primary-color-shadow);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .table-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .search-input {
+    width: 100%;
+    min-width: unset;
+  }
+  
+  .ant-space {
+    width: 100%;
+  }
+  
+  .ant-space .ant-btn {
+    flex: 1;
+  }
+}

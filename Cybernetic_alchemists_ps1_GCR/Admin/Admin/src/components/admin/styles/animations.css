@@ -1,0 +1,59 @@
+/* Fade animations */
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms ease-in;
+}
+
+/* Slide animations */
+.slide-enter {
+  transform: translateX(-100%);
+}
+.slide-enter-active {
+  transform: translateX(0);
+  transition: transform 300ms ease-in-out;
+}
+.slide-exit {
+  transform: translateX(0);
+}
+.slide-exit-active {
+  transform: translateX(-100%);
+  transition: transform 300ms ease-in-out;
+}
+
+/* Scale animations */
+.scale-enter {
+  transform: scale(0.9);
+  opacity: 0;
+}
+.scale-enter-active {
+  transform: scale(1);
+  opacity: 1;
+  transition: all 300ms ease-in-out;
+}
+.scale-exit {
+  transform: scale(1);
+  opacity: 1;
+}
+.scale-exit-active {
+  transform: scale(0.9);
+  opacity: 0;
+  transition: all 300ms ease-in-out;
+}
+
+/* Hover effects */
+.hover-lift {
+  transition: transform 0.2s ease;
+}
+.hover-lift:hover {
+  transform: translateY(-4px);
+}

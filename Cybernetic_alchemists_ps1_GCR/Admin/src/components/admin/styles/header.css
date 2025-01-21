@@ -1,0 +1,280 @@
+@import './animations.css';
+@import './transitions.css';
+@import './theme.css';
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 24px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1002;
+  transition: all 0.2s;
+  height: 64px;
+  width: 100%;
+  background-color: var(--background-primary);
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+  width: 150px;
+  object-fit: contain;
+  margin: 16px 0;
+}
+
+.header-center {
+  flex: 1;
+  max-width: 600px;
+  margin: 0 2rem;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.search-input {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.search-button {
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  margin-left: -40px;
+  cursor: pointer;
+  color: #666;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding-right: 24px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  
+}
+
+.trigger {
+  font-size: 18px;
+  line-height: 64px;
+  padding: 0 24px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.trigger:hover {
+  color: #1890ff;
+}
+
+.notifications {
+  position: relative;
+}
+
+.notification-icon {
+  font-size: 1.2rem;
+  color: #666;
+  cursor: pointer;
+}
+
+.profile-section {
+  position: relative;
+  margin-left: 20px;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #1890ff;
+  transition: transform 0.2s;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
+}
+
+.profile-menu {
+  position: absolute;
+  top: 48px;
+  right: 0;
+  width: 200px;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  padding: 8px 0;
+  z-index: 1002;
+  right: 0;
+  width: 200px;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  padding: 8px 0;
+  z-index: 1002;
+}
+
+.profile-menu-header {
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.profile-pic-large {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 3px solid #1890ff;
+}
+
+.profile-menu-header h3 {
+  margin: 10px 0 5px;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.profile-menu-header p {
+  color: #666;
+  margin: 0;
+}
+
+.profile-menu-items {
+  padding: 10px 0;
+}
+
+.profile-menu-items button {
+  width: 100%;
+  padding: 12px 20px;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #666;
+  transition: background-color 0.2s;
+}
+
+.profile-menu-items button:hover {
+  background-color: #f5f5f5;
+  color: #1890ff;
+}
+
+.profile-menu-items button svg {
+  margin-right: 10px;
+  font-size: 1.1em;
+}
+
+.notifications-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 300px;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  padding: 8px 0;
+  z-index: 1001;
+}
+
+.notification-item {
+  padding: 8px 16px;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+}
+
+.notification-item:last-child {
+  border-bottom: none;
+}
+
+.notification-item:hover {
+  background-color: #f5f5f5;
+}
+
+.notification-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #ff4444;
+  color: white;
+  font-size: 0.7rem;
+  padding: 2px 6px;
+  border-radius: 10px;
+}
+
+.notification-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+  display: none;
+}
+
+.notifications:hover .notification-dropdown {
+  display: block;
+}
+
+.notification-item {
+  padding: 0.8rem;
+  border-bottom: 1px solid #eee;
+}
+
+.notification-item:last-child {
+  border-bottom: none;
+}
+
+.profile-menu {
+  position: relative;
+}
+
+.profile-button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: #666;
+  cursor: pointer;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  min-width: 150px;
+}
+
+.profile-dropdown a {
+  display: block;
+  padding: 0.8rem 1rem;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.profile-dropdown a:hover {
+  background-color: #f5f5f5;
+}

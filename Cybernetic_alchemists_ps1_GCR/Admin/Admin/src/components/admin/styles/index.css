@@ -1,0 +1,68 @@
+/* Common styles for admin components */
+.page-header {
+  margin-bottom: 24px;
+}
+
+.card-hover-effect {
+  transition: all 0.3s;
+}
+
+.card-hover-effect:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  margin-bottom: 16px;
+}
+
+.success-color {
+  color: #52c41a;
+}
+
+.primary-color {
+  color: #1890ff;
+}
+
+.warning-color {
+  color: #faad14;
+}
+
+.info-color {
+  color: #13c2c2;
+}
+
+.stat-trend-up {
+  color: #52c41a;
+}
+
+.stat-trend-down {
+  color: #ff4d4f;
+}
+
+/* Responsive utilities */
+@media (max-width: 768px) {
+  .hide-on-mobile {
+    display: none;
+  }
+  
+  .mobile-full-width {
+    width: 100% !important;
+  }
+}

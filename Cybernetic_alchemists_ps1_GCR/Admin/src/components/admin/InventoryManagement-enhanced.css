@@ -1,0 +1,49 @@
+.inventory-management {
+  padding: 24px;
+}
+
+.warning-card .ant-statistic-title {
+  color: #faad14;
+}
+
+.danger-card .ant-statistic-title {
+  color: #f5222d;
+}
+
+.inventory-stats-card {
+  margin-bottom: 24px;
+}
+
+.inventory-chart {
+  height: 300px;
+  margin-top: 24px;
+}
+
+.stock-status-tag {
+  min-width: 90px;
+  text-align: center;
+}
+
+.health-score {
+  width: 120px;
+}
+
+.bulk-upload-modal {
+  .ant-upload {
+    width: 100%;
+  }
+}
+
+.product-details-card {
+  .ant-card-body {
+    padding: 24px;
+  }
+}
+
+.inventory-filters {
+  margin-bottom: 16px;
+  
+  .ant-form-item {
+    margin-bottom: 0;
+  }
+}
