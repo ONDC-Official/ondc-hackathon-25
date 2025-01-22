@@ -1,0 +1,62 @@
+/* Page transitions */
+.page-enter {
+  opacity: 0;
+  transform: translateY(15px);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms ease-in-out;
+}
+
+.page-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.page-exit-active {
+  opacity: 0;
+  transform: translateY(-15px);
+  transition: opacity 300ms, transform 300ms ease-in-out;
+}
+
+/* Menu transitions */
+.menu-item-enter {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.menu-item-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms ease-in-out;
+}
+
+.menu-item-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.menu-item-exit-active {
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity 300ms, transform 300ms ease-in-out;
+}
+
+/* Hover animations */
+.hover-scale {
+  transition: transform 0.2s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+.hover-glow {
+  transition: box-shadow 0.3s ease;
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 15px var(--primary-color);
+}

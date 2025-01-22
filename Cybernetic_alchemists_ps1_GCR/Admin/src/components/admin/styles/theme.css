@@ -1,0 +1,44 @@
+/* Light theme variables */
+[data-theme="light"] {
+  --background-primary: #ffffff;
+  --background-secondary: #f0f2f5;
+  --text-primary: rgba(0, 0, 0, 0.85);
+  --text-secondary: rgba(0, 0, 0, 0.45);
+  --border-color: #f0f0f0;
+  --shadow-color: rgba(0, 0, 0, 0.08);
+  --hover-color: rgba(0, 0, 0, 0.03);
+}
+
+/* Dark theme variables */
+[data-theme="dark"] {
+  --background-primary: #141414;
+  --background-secondary: #1f1f1f;
+  --text-primary: rgba(255, 255, 255, 0.85);
+  --text-secondary: rgba(255, 255, 255, 0.45);
+  --border-color: #303030;
+  --shadow-color: rgba(0, 0, 0, 0.2);
+  --hover-color: rgba(255, 255, 255, 0.03);
+}
+
+/* Common theme variables */
+:root {
+  --primary-color: #1890ff;
+  --success-color: #52c41a;
+  --warning-color: #faad14;
+  --error-color: #ff4d4f;
+  --border-radius-base: 8px;
+  --border-radius-sm: 4px;
+  --transition-duration: 0.3s;
+}
+
+/* Smooth transitions for theme changes */
+body {
+  transition: all var(--transition-duration) ease;
+}
+
+.theme-transition * {
+  transition: background-color var(--transition-duration) ease,
+              color var(--transition-duration) ease,
+              border-color var(--transition-duration) ease,
+              box-shadow var(--transition-duration) ease;
+}

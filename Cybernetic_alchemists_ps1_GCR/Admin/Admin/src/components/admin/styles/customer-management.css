@@ -1,0 +1,46 @@
+.dashboard-stats {
+  margin-bottom: 24px;
+}
+
+.stat-card {
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.customer-management {
+  padding: 24px;
+}
+
+.customer-management .ant-card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.customer-management .ant-table {
+  background: #fff;
+}
+
+.customer-management .ant-btn {
+  margin: 0 4px;
+}
+
+.customer-management .ant-space {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.customer-details-modal .ant-descriptions-item-label {
+  font-weight: bold;
+}
+
+.customer-management .ant-card-head {
+  background: #f7f7f7;
+}
+
+.customer-management .ant-table-thead > tr > th {
+  background: #f7f7f7;
+}
